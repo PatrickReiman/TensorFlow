@@ -1,4 +1,4 @@
 # TensorFlow
 AI assignment for NEUR481
 
-Hosted Site: 
+Hosted Site: https://patrickreiman.github.io/TensorFlow/
