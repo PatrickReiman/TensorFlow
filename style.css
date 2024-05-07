@@ -1,0 +1,42 @@
+/* Background */
+body {
+    background-color: #000000;
+}
+
+/* Headers and their text */
+.container {
+    font-family: Helvetica;
+    text-align: center;
+    color: #000000;
+    font-weight: bolder;
+}
+
+h1 {
+    color: white;
+}
+
+/* Buttons */
+.button {
+    margin-left: auto; 
+    margin-right: auto;
+    color: #ffffff;
+    background-color: #0661d9;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color:#094ba1;
+    color: #ffffff;
+    transition:0.5s;
+}
+
+.button:active {
+    color: #ffffff;
+    background-color: #3781e0;
+}
