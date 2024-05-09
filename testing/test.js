@@ -346,3 +346,24 @@ function Ex20() {
     const prediction = model.predict(tf.randomNormal([3, 784]));
     prediction.print();
 }
+
+
+// i skipped saving and loading models
+
+
+// model conversion
+// converter: SavedModel (default format in which models are saved), KerasModel (generally saved as HDF5 file), TensorFlow Hub Module (packaged for distribution on TensorFlow Hub)
+
+// Ex: Keras model (model.h5) in tmp/
+// convert using this command: $tensorflowjs_converter --input_format=keras /tmp/model.h5 /tmp/tfjs_model
+// converts model at /tmp/model.h5 and output model.json along with binary weight files at tmp/tfjs_model/ directory
+
+// API for converted TensorFlow SavedModel: const model = await tf.loadGraphModel('path/to/model.json');
+// API for converted Keras Model: const model= await tf.loadLayersModel('path/to/model.json');
+
+// honestly you'll have to optimize it if you do this
+
+
+// if you want to go through differences between python and javascript keras you can
+// https://www.tensorflow.org/js/guide/layers_for_keras_users
+
